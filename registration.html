@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> registration page</title>
+    <link rel="stylesheet" type="text/css" href="homepage.css">
+</head>
+
+<body>
+    <h1 id="header">ONLINE VOTING SYSTEM</h1>
+    <hr>
+    <h2>Registration Form</h2>
+    <form action="../project/registration.php" method="POST" enctype="multipart/form-data">
+        <input type="text" name="name" placeholder="enter your name">
+        <input type="number" name="mobile" placeholder="enter mobile number"><br><br>
+        <input type="password" name="password" placeholder="enter password">
+        <input type="password" name="cpassword" placeholder="conform password"><br><br>
+        <input type="text" name="address" placeholder="enter address"><br><br>
+        <input style="background-color: white;" type="file" name="photo" placeholder="choose file"><br><br>
+        <select id="dropbox" name="role">
+	<option value="1">Voter</option>
+	<option value="2">Candidate</option>
+</select><br><br>
+        <button id="btn">Register</button><br>
+        <p id="footer"> Already user? <a href="homepage.html">Login here</a></p>
+    </form>
+</body>
+
+</html>
